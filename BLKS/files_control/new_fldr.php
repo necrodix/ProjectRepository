@@ -27,7 +27,7 @@ switch($acc){
 	case 2:
 		$prof=$_POST['prof'];
 		$fname=$_POST['fname'];
-		$Consulta=mysql_query("INSERT INTO `files_ges` (`id`, `nombre`, `tipo`, `ext`, `icono`, `padre`, `url`, `status`, `uploader`, `fecha`, `hora`) VALUES (NULL, '".$fname."', 'fld', 'fld', 'IMG/Folder.png', '".$prof."', '', '1', '".$_SESSION["id"]."', '".date('Y\-m\-d')."', '".date('h\:i\:s')."');");
+		$Consulta=$mysql->query("INSERT INTO `files_ges` (`id`, `nombre`, `tipo`, `ext`, `icono`, `padre`, `url`, `status`, `uploader`, `fecha`, `hora`) VALUES (NULL, '".$fname."', 'fld', 'fld', 'IMG/Folder.png', '".$prof."', '', '1', '".$_SESSION["id"]."', '".date('Y\-m\-d')."', '".date('h\:i\:s')."');");
 		
 	break;
 }

@@ -4,38 +4,6 @@
 <meta charset="utf-8">
 <title>Documento sin título</title>
 <script type="text/javascript" src="../../JS/jquery-3.7.0.min.js"></script>
-<script type="text/javascript" >
-
-/*
-$('#uploadx').on('click', function() {
-    var file_data = $('#sortpicture').prop('files')[0];   
-    var form_data = new FormData();                  
-    form_data.append('file', file_data);
-    alert(form_data);                             
-    $.ajax({
-        url: 'upload.php', // <-- point to server-side PHP script 
-        dataType: 'text',  // <-- what to expect back from the PHP script, if anything
-        cache: false,
-        contentType: false,
-        processData: false,
-        data: form_data,                         
-        type: 'post',
-        success: function(php_script_response){
-            alert(php_script_response); // <-- display response from the PHP script, if any
-        }
-     });
-});
-function subir(){
-	//alert($("#sortpicture").val());
-	$.post("upload.php",{"filex":$("#sortpicture").val()},function(data){
-		if(data){
-			alert(data);
-			}
-		});
-	};
-*/
-</script>
-
 
 <script type="text/javascript">
     $(function() {
@@ -77,37 +45,6 @@ function subir(){
     });
 </script>
 
-<!--<script type="text/javascript">
-    $(function() {
-        $('#frmUpload').on('submit', function() {
-			alert($('.file').prop('files').length);
-            var file_data = $('.file').prop('files')[0];
-            if(file_data != undefined) {
-                var form_data = new FormData();                  
-                form_data.append('file', file_data);
-                $.ajax({
-                    type: 'POST',
-                    url: 'upload.php',
-                    contentType: false,
-                    processData: false,
-                    data: form_data,
-                    success:function(response) {
-                       // if(response == 'success') {
-						    if(response) {
-                            alert(response);
-						   // alert('File uploaded successfully.');
-                        } else {
-                            alert('Something went wrong. Please try again.');
-                        }
-
-                        $("#frmUpload")[0].reset();
-                    }
-                });
-            }
-            return false;
-        });
-    });
-</script>-->
 </head>
 
 <body>

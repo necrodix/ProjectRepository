@@ -67,7 +67,7 @@ switch($acc){
 			break; 
 			}
 	
-	$Consulta=mysql_query("INSERT INTO `memory_db`.`usuarios` (`id`, `nombre`, `app`, `apm`, `puesto`, `email`, `pass`, `categoria`, `status`) VALUES (NULL, '".$_POST['nbr']."', '".$_POST['app']."', '".$_POST['apm']."', 'NULL', '".$_POST['usr']."', '".$_POST['pss']."', '".$ctg."', '1');");
+	$Consulta=$mysql->query("INSERT INTO `usuarios` (`id`, `nombre`, `app`, `apm`, `puesto`, `email`, `pass`, `categoria`, `status`) VALUES (NULL, '".$_POST['nbr']."', '".$_POST['app']."', '".$_POST['apm']."', 'NULL', '".$_POST['usr']."', '".$_POST['pss']."', '".$ctg."', '1');");
 	if($Consulta){
 	
 	echo '<section id="win_new_user" class="win_pop2" >
@@ -83,7 +83,7 @@ switch($acc){
 ';
 	}
 	break;
-	mysql_close();
+	mysqli_close($mysql);
 	}
 
 ?>
