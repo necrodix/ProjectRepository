@@ -90,12 +90,5 @@ while($result=mysql_fetch_array($Consulta)){
     </ul>
 </div>
 
-
-
-
-<!--<input type="button" value="remove" onClick="del_list_element()" style=" width:120px; max-width:120px; min-width:120px; float:left; padding-left:20px;">-->
-
-
-
 </section>
 
